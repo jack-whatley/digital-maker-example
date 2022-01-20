@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title> RSG Digital Maker </title>
+
+    </head>
+
+    <body>
+
+        <!-- the form part would already be filled in -->
+        <form id="form">
+
+            <lable for="text-input">Text Input:</lable><br>
+            <input type="text" id="text-input" name="text-input">
+
+        </form>
+
+        <!-- cubs would need to just write this bit -->
+        <button id="button">Submit</button>
+        <p id="output"></p>
+
+        <script>
+
+            // already filled in for cubs:
+            const input = document.forms["form"]["text-input"];
+            const button = document.getElementById("button");
+            const output = document.getElementById("output");
+
+            // cubs code:
+            button.addEventListener("click", function() {
+
+                output.innerHTML = input.value;
+
+            });
+
+        </script>
+
+    </body>
+
+</html>
